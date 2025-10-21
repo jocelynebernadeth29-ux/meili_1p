@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>履歷 - AU114011129</title>
+  <style>
+    :root{
+      --bg:#f6f8fb; --card:#ffffff; --accent:#2563eb; --muted:#6b7280; --text:#0f172a;
+      --maxw:900px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans CJK TC",sans-serif; background:var(--bg); color:var(--text); padding:24px; display:flex; justify-content:center}
+    .resume{width:100%; max-width:var(--maxw)}
+    .card{background:var(--card); border-radius:14px; box-shadow:0 6px 20px rgba(16,24,40,0.08); overflow:hidden; display:grid; grid-template-columns:1fr 2fr}
+    header{padding:28px 32px; display:flex; gap:18px; align-items:center}
+    .avatar{width:96px; height:96px; border-radius:12px; background:linear-gradient(135deg,var(--accent),#7c3aed); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:28px}
+    .meta h1{margin:0;font-size:20px}
+    .meta p{margin:6px 0 0; color:var(--muted)}
+    .left{background:#fbfdff; padding:20px 20px; border-right:1px solid rgba(15,23,42,0.04)}
+    .section{padding:20px 28px}
+    h3{margin:0 0 12px; font-size:14px; color:var(--muted)}
+    .contact p{margin:6px 0; font-size:14px}
+    .skills{display:flex; gap:8px; flex-wrap:wrap}
+    .chip{background:#eef2ff;padding:6px 10px;border-radius:999px;font-size:13px}
+    .content{padding:22px}
+    .job{margin-bottom:14px}
+    .job .title{font-weight:600}
+    .job .meta{color:var(--muted); font-size:13px}
+    .print-btn{position:absolute; right:28px; top:28px; background:var(--accent); color:white; border:none; padding:8px 12px;border-radius:8px; cursor:pointer}
+    .topbar{position:relative}
+    footer{padding:18px 28px; background:transparent; font-size:13px; color:var(--muted)}
+    @media (max-width:800px){.card{grid-template-columns:1fr;}.left{border-right:none;border-bottom:1px solid rgba(15,23,42,0.04)} .avatar{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <div class="topbar">
+      <button class="print-btn" onclick="window.print()">列印 / 儲存 PDF</button>
+    </div>
+
+    <div class="card" role="article" aria-label="個人履歷">
+      <div class="left">
+        <header>
+          <div class="avatar">AU</div>
+          <div class="meta">
+            <h1>吳美莉</h1>
+            <p>學號: AU114011129</p>
+            <p style="margin-top:6px; color:var(--muted)">應徵職位：實習生 / 前端工程師</p>
+          </div>
+        </header>
+
+        <div class="section contact">
+          <h3>聯絡資訊</h3>
+          <p>電話：+886 912-345-987</p>
+          <p>Email：example@mail.com</p>
+          <p>住址：台北市，台灣</p>
+        </div>
+
+        <div class="section">
+          <h3>技能</h3>
+          <div class="skills">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Git</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>語言</h3>
+          <p>印尼（母語） • 英文（中等）</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="section">
+          <h3>個人簡介</h3>
+          <p>熱衷於前端開發與使用者經驗，擅長建立可維護且響應式的網頁介面。希望透過實習或見習機會學習團隊協作流程與產品開發實務。</p>
+        </div>
+
+        <div class="section">
+          <h3>學歷</h3>
+          <div class="job">
+            <div class="title">某某大學｜資訊相關科系</div>
+            <div class="meta">2022 - 2026（在學）</div>
+            <p>主修課程：資料結構、網頁程式設計、資料庫</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>相關經歷</h3>
+          <div class="job">
+            <div class="title">前端開發實作作品</div>
+            <div class="meta">個人專案 • 2024</div>
+            <p>建立小型作品集網站，使用 HTML/CSS/JavaScript，實作響應式設計與基本互動效果（滑動、modal）。</p>
+          </div>
+
+          <div class="job">
+            <div class="title">學生助教 / 專案團隊成員</div>
+            <div class="meta">學校課程 • 2023</div>
+            <p>協助教學、維護專案 Git 倉庫、參與需求討論與版本控制流程。</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>作品連結</h3>
+          <p><a href="#" onclick="return false">https://your-portfolio.example</a></p>
+        </div>
+
+        <footer>
+          學號：AU114011129 • 可依需求調整內容與樣式
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 小功能：自動把學號填入 meta 或其他需要的地方（示範用，已硬編在 HTML）
+    (function(){
+      // 這裡可以用來動態載入資料，例如從 localStorage 或 API
+      // 範例：console.log('學號: AU114011127')
+    })();
+  </script>
+</body>
+</html>
